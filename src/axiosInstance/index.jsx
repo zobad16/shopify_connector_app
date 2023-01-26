@@ -1,8 +1,17 @@
 import axios from "axios";
 import { BACK_END_URL } from "../config/config";
 
-const axiosInstance = axios.create({
+const service = axios.create({
   baseURL: BACK_END_URL,
 });
 
-export default axiosInstance;
+
+service.interceptors.request.use(
+  config => {
+    config.headers['Ngrok-Skip-Browser-Warning'] = 'skip-browser-warning';
+    return config
+  } ,
+  err => console.error(err)
+)
+
+export default service;

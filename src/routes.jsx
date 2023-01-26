@@ -11,6 +11,7 @@ import { SignIn, SignUp } from "@/pages/auth";
 import Products from "./pages/Products/Products";
 import Orders from "./pages/Orders/Orders";
 import AdminJobs from "./pages/AdminJobs/AdminJobs";
+import Stores from "./pages/Store/Store";
 const icon = {
   className: "w-5 h-5 text-inherit",
 };
@@ -61,6 +62,13 @@ export const routes = [
         name: "admin jobs",
         path: "/admin",
         element: <AdminJobs />,
+      },
+      {
+        //Stores
+        icon: <BellIcon {...icon} />,
+        name: "stores",
+        path: "/stores",
+        element: <Stores />,
       },
       {
         icon: <BellIcon {...icon} />,

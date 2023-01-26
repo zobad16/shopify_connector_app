@@ -16,6 +16,7 @@ import TablesData from "./TablesData";
 import Products from "../pages/Products/Products";
 import Orders from "../pages/Orders/Orders";
 import AdminJobs from "../pages/AdminJobs/AdminJobs";
+import Stores from "../pages/Store/Store";
 const SideNav = () => {
   const menus = [
     { name: "Dashboard", link: "/home", icon: MdOutlineDashboard },
@@ -23,6 +24,7 @@ const SideNav = () => {
     // { name: "Tables", link: "/tables", icon: FiMessageSquare },
     { name: "Products", link: "/products", icon: FiShoppingBag },
     { name: "Orders", link: "/orders", icon: FiShoppingCart },
+    { name: "Stores", link: "/stores", icon: FiShoppingCart },
     {name: "Admin Jobs", link:"/admin", icon: AiOutlineExperiment},
     // {name: "Notifications",link: "/notifications", icon: TbReportAnalytics, },
     { name: "Sign In", link: "/login", icon: FiFolder, margin: true },
@@ -84,6 +86,7 @@ const SideNav = () => {
           <Route path="/tables" element={<Tables />} />
           <Route path="/products" element={<Products />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/stores" element={<Stores/>} />
           <Route path="/admin" element={<AdminJobs />} />
           <Route path="/tables/data" element={<TablesData />} />
           <Route path="/notifications" element={<Notifications />} />

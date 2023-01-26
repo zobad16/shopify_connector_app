@@ -7,6 +7,7 @@ export const requests = {
     productUpload: `products/upload?limit=1000&skip=1`,
     orderUpload: `orders/upload?limit=1000&skip=1`,
     customerUpload: `customers/upload?limit=100&skip=1`,
+    getStore: `stores/stores?limit=5&skip=1`,
     //,
     // fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
     // fetchTrending: `/trending/all/day?api_key=${API_KEY}`,
